@@ -9,7 +9,7 @@ genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 
 def load_image_from_path(image_path):
     # Load the image from the local file system
-    return Image.open("C:/Users/KAVIN/Downloads/arun off.jpeg")
+    return Image.open("IMAGE-PATH")
 
 def extract_text_from_image(image):
     # Use pytesseract to extract text from the image
@@ -36,7 +36,7 @@ image = load_image_from_path(image_path)
 extracted_text = extract_text_from_image(image)
 
 # Define the prompt
-prompt = "what is the intenship id"
+prompt = "YOUR PROMPT"
 
 # Process the text and get results from the generative model
 result = generate_response_from_text(extracted_text, prompt)
