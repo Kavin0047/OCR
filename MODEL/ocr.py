@@ -4,7 +4,7 @@ from PIL import Image
 import pytesseract
 
 # Set up the API key for Google's Generative AI
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyBwram1ejmI0wYme63-XauP-PDXsLN1UDs'
+os.environ['GOOGLE_API_KEY'] = 'YOUR-API-KEY'
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 
 def load_image_from_path(image_path):
